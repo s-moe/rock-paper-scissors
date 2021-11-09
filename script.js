@@ -27,3 +27,21 @@ const determineWinner = (userChoice, computerChoice) => {
       return 'user won!'
     }
   }
+if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return 'computer won!'
+    } else {
+      return 'user won!'
+    }
+  }
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'computer won!'
+    } else {
+      return 'user won!'
+    }
+  }
+  if (userChoice === 'bomb') {
+    return 'bomb dropped! automatic win'
+  }
+}
