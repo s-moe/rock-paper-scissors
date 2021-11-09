@@ -45,3 +45,11 @@ if (userChoice === 'paper') {
     return 'bomb dropped! automatic win'
   }
 }
+const playGame = () => {
+    let userChoice = getUserChoice('bomb');
+    let computerChoice = getComputerChoice()
+    console.log(userChoice)
+    console.log(computerChoice)
+    console.log(determineWinner(userChoice, computerChoice))
+  }
+  playGame()
