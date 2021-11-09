@@ -46,7 +46,7 @@ if (userChoice === 'paper') {
   }
 }
 const playGame = () => {
-    let userChoice = getUserChoice('bomb');
+    let userChoice = getUserChoice('paper');
     let computerChoice = getComputerChoice()
     console.log(userChoice)
     console.log(computerChoice)
