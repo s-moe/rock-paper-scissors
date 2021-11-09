@@ -16,3 +16,14 @@ function getComputerChoice(){
     return 'scissors'
   }
 }
+const determineWinner = (userChoice, computerChoice) => {
+  if (userChoice === computerChoice) {
+    return 'It was a tie!'
+  }
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return 'computer won!'
+    } else {
+      return 'user won!'
+    }
+  }
